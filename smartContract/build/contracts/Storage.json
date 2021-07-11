@@ -637,8 +637,8 @@
     "1337": {
       "events": {},
       "links": {},
-      "address": "0x345cA3e014Aaf5dcA488057592ee47305D9B3e10",
-      "transactionHash": "0xd4ee94d194def1a1cba98d9c5170f90914e46120efadb1989c8e50b17fac7b6e"
+      "address": "0x3d49d1eF2adE060a33c6E6Aa213513A7EE9a6241",
+      "transactionHash": "0x97cf881dd4b325817a4a537c022d9cfcec70d2a3e12e2c305408d5d8be4d8c9e"
     },
     "2018": {
       "events": {},
@@ -648,7 +648,7 @@
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-06-25T17:01:35.462Z",
+  "updatedAt": "2021-06-27T09:18:31.212Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Store & retrieve value in a variable",

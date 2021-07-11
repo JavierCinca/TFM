@@ -113,9 +113,10 @@ contract Qr {
      *
      * @param _nombre El nombre del asistente. 
      * @param _email  El email del asistente.
-     */
-    function compraEntrada(string memory _nombre, string memory _email) noAsistentes public payable {
+     
+    function compraEntrada(string memory _nombre, string memory _email) noAsistentes public  {
         
+       
         require(!locked, "Reentrant call detected!");
         locked = true;
         (bool success,) = admin.call{value: cost}("");
@@ -129,7 +130,19 @@ contract Qr {
         asistentes.push(msg.sender);
         
     }
-    
+    */
+     function compraEntrada(string memory _nombre, string memory _email) noAsistentes public {
+
+        bytes memory b = bytes(_nombre);
+        require(b.length != 0, "El nombre no puede ser vacio");
+
+        Asistente memory datos = Asistente(_nombre, _email);
+
+        asistente[msg.sender] = datos;
+
+        asistentes.push(msg.sender);
+
+    }
     
    
     function whoAmI() soloAsistentes public view returns (string memory _nombre, string memory _email) {
