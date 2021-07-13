@@ -1,6 +1,5 @@
 # TFM
 
-##BlockG
 
 <h3>:construction: Entorno de trabajo:</h3>
 <li>Instalamos <b>Node.js</b> y <b>Angular 8+</b></li> 
@@ -33,3 +32,8 @@
 <li>Para la versión móvil: <b>ng serve</b> en mobile_QR_app</li>
 <li>Para la versión móvil: Hay que generar un nuevo QR con la address del nuevo contrato del evento</li>
 <li>Para el BackEnd: <b>node app.js</b> en backEnd-node</li>
+
+<h3>:construction: IBFT2:</h3>
+<li>Ejecutamos el script disponible (script.sh). Nos lanza una red IBFT2 con cuatro nodos validadores. </li>
+<li>utilizando la version de IBFT del backend de la aplicacion podremos desplegar el proyecto</li>
+
